@@ -5,7 +5,7 @@ import argparse
 import sys
 from urllib.parse import urlencode
 
-parser = argparse.ArgumentParser(description = 'yandexDiskLoader: downloading files from Yandex Disk using a shared link', usage = ''' python3 yandexDiskLoader.py <shared link> <filename>''')
+parser = argparse.ArgumentParser(description = 'yandexDiskLoader: downloading files from Yandex Disk using a shared link', usage = ''' python3 yandexDiskLoader.py -l <shared link> -o <filename>''')
 
 parser.add_argument('-l', type = str, help = 'a shared Yandex link to a file')
 parser.add_argument('-o', type = str, help = 'a name of the downloaded file')
